@@ -1,5 +1,5 @@
 class solution (object):
-    def ispolindrome (self,x):
+    def ispolindrome (self,x)->bool:
         str(self.x)=x
       
         if x[::-1]==x:
@@ -12,3 +12,4 @@ if (result.ispolindrome(x)==True):
      print("number is polindrome")
 else:
      print("number is not polindrome")
+    

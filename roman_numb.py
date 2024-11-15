@@ -1,5 +1,5 @@
 class Solution:
-    def roman_to_integer(self, s: str) -> int:
+    def roman_to_integer(self, s) -> int:
       
         roman_dict = {
             "I": 1,
@@ -27,6 +27,6 @@ class Solution:
 
 
 solution = Solution()
-roman_numeral = input("Give a number in Roman numerals (I / V / X / L / C / D / M): ").strip().upper()
+roman_numeral = str(input("Give a number in Roman numerals (I / V / X / L / C / D / M): ").strip().upper())
 result = solution.roman_to_integer(roman_numeral)
 print(f"The integer value is: {result}")
