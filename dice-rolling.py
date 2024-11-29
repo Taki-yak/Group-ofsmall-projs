@@ -1,19 +1,18 @@
-import random
-import time 
-def roll_dice(sides=6):
-    """giving random dice number"""
-    roll_result=random.randint(1,sides)
-    return roll_result
-print("welcome in game of dice rolling ")
-rolls=int(input("how many times you want to roll the dice"))
-print(f"rolling the dice {rolls}time(S)")
-print("rolling . . .")
-time.sleep(2)
+import random,time
+def roll_dice(sides):
+  """resposible of giving random number for dice """
+  rolling=random.randint(1,sides)
+  return rolling
+
+sides=int(input(("how many sides do u want in your dice:")))
+rolls_number=int(input("how many time for rolling your dice:"))
 results=[]
-for i in range(rolls):
-    roll_re=roll_dice()
-    results.append(roll_re)
-    
-print(f"results:{results}")
+for i in range(rolls_number): 
+    results.append(roll_dice(sides))
+for i in range (len(results)):
+    print(f" {i+1} roll={results[i]}")
+print(dir(roll_dice))
+print(roll_dice.__doc__)
+help(roll_dice)
 
 

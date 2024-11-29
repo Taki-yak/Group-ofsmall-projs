@@ -5,7 +5,7 @@ for num in range(max):
     number = int(input(f"{num + 1}- "))
     print(f"Number {number} has been added to your list")
     my_list.append(number)
-    print(f"Still {max - 1 - num} number(s) to add")
+    print(f"Still {max - 1 } number(s) to add")
 
 print("Your list:")
 print(my_list)
